@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authority Boost 90 · Zoopa · 498A</title>
+  <meta name="description" content="Plan integral de 90 días para impulsar la autoridad digital de profesionales. Orquesta 7 capas de presencia (owned + earned + reviews + discoverability + LLM visibility + comunidad + identidad). Servicio Zoopa / 498A.">
+  <meta property="og:title" content="Authority Boost 90 · Zoopa · 498A">
+  <meta property="og:description" content="Plan integral 90 días para autoridad digital. Las 7 capas que importan, métrica DKI propietaria, integrado con GEORadar.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zoopa-smart-agency.github.io/authority-boost-90/">
+  <style>
+    @page {
+      size: A4;
+      margin: 2cm 1.5cm;
+      @top-left { content: "Authority Boost 90"; font-family: 'Georgia', serif; font-size: 8pt; color: #888; }
+      @top-right { content: string(doc-section); font-family: 'Georgia', serif; font-size: 8pt; color: #888; }
+      @bottom-center { content: "Página " counter(page) " · ZOOPA · 498AS"; font-family: 'Georgia', serif; font-size: 8pt; color: #999; }
+    }
+    @page :first { @top-left {content: "";} @top-right {content: "";} @bottom-center {content: "";} }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Georgia', serif;
+      font-size: 11pt;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #fff;
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    a { color: #1a1a1a; text-decoration: underline; }
+    a:hover { color: #b30000; }
+
+    /* Cover */
+    .cover { page-break-after: always; min-height: 90vh; display: flex; flex-direction: column; justify-content: space-between; padding: 60px 20px 40px; }
+    .cover-eyebrow { font-size: 10pt; text-transform: uppercase; letter-spacing: 2px; color: #666; margin-bottom: 30px; }
+    .cover h1 { font-size: 56pt; font-weight: 400; letter-spacing: -2px; line-height: 0.95; margin-bottom: 20px; }
+    .cover-subtitle { font-size: 16pt; font-style: italic; color: #555; max-width: 85%; margin-bottom: 50px; line-height: 1.4; }
+    .cover-headline-metric { background: #0a0a0a; color: #fff; padding: 30px 35px; margin: 30px 0 30px; }
+    .cover-metric-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; }
+    .cover-metric-value { font-size: 28pt; font-weight: 700; letter-spacing: -1px; line-height: 1.1; }
+    .cover-metric-label { font-size: 9pt; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 10px; opacity: 0.7; }
+    .cover-footer { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 30px; border-top: 1px solid #ccc; font-size: 10pt; }
+    .cover-author strong { display: block; font-size: 12pt; margin-bottom: 3px; }
+    .cover-date { text-align: right; color: #666; }
+    .cover-brand { font-size: 9pt; font-weight: 700; letter-spacing: 1.5px; color: #000; }
+
+    /* Sections */
+    .section { margin-bottom: 35px; page-break-inside: avoid; }
+    .section-header { display: flex; align-items: baseline; margin-bottom: 18px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+    .section-number { font-size: 9pt; font-weight: 700; letter-spacing: 2px; color: #888; margin-right: 18px; text-transform: uppercase; }
+    .section-number::before { content: "§ "; color: #ccc; }
+    .section-title { font-size: 15pt; font-weight: 600; flex: 1; string-set: doc-section content(); }
+
+    .exec-summary { background: #f3f3f3; padding: 25px 30px; margin-bottom: 35px; border-radius: 2px; }
+    .exec-summary h2 { font-size: 10pt; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 14px; font-weight: 700; }
+    .exec-summary p { font-size: 11pt; margin-bottom: 10px; }
+    .exec-summary strong { color: #b30000; }
+
+    /* Layers stack visual */
+    .layer-stack { margin: 18px 0; }
+    .layer { padding: 12px 18px; margin-bottom: 4px; border-radius: 2px; display: flex; align-items: baseline; gap: 14px; }
+    .layer-num { font-size: 20pt; font-weight: 700; letter-spacing: -1px; min-width: 40px; color: rgba(0,0,0,0.4); }
+    .layer-content h4 { font-size: 11pt; margin-bottom: 3px; }
+    .layer-content p { font-size: 9.5pt; color: #555; }
+    .layer.l1 { background: #fef3f3; }
+    .layer.l2 { background: #fff0e6; }
+    .layer.l3 { background: #fef9ed; }
+    .layer.l4 { background: #f0f8f0; }
+    .layer.l5 { background: #e6f4f8; }
+    .layer.l6 { background: #f0e6f8; }
+    .layer.l7 { background: #f5f5f5; }
+
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 9.5pt; }
+    th { background: #1a1a1a; color: #fff; text-align: left; padding: 9px 12px; font-weight: 500; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.5px; }
+    td { padding: 9px 12px; border-bottom: 1px solid #eaeaea; vertical-align: top; }
+    tr:nth-child(even) { background: #fafafa; }
+    .td-tier1 { color: #b30000; font-weight: 700; }
+    .td-tier2 { color: #d97706; font-weight: 600; }
+    .td-tier3 { color: #047857; }
+
+    .insight-box { background: #fef9ed; padding: 14px 18px; margin: 14px 0; font-size: 10pt; border-radius: 2px; }
+    .insight-box::before { content: "INSIGHT"; display: inline-block; font-size: 8pt; font-weight: 700; letter-spacing: 1.5px; color: #8a5800; background: #fff; padding: 2px 8px; margin-right: 10px; border-radius: 2px; }
+
+    .phases-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 18px 0; }
+    .phase-card { background: #fafafa; padding: 16px; border-radius: 2px; }
+    .phase-card h4 { font-size: 11pt; margin-bottom: 6px; }
+    .phase-card .phase-days { font-size: 8pt; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 8px; font-weight: 700; }
+    .phase-card p { font-size: 9.5pt; color: #555; margin-bottom: 8px; }
+
+    .cta-block { background: #0a0a0a; color: #fff; padding: 35px; margin: 35px 0; border-radius: 2px; text-align: center; }
+    .cta-block h3 { font-size: 18pt; font-weight: 400; letter-spacing: -0.5px; margin-bottom: 10px; }
+    .cta-block p { font-size: 11pt; opacity: 0.85; margin-bottom: 18px; }
+    .cta-block a.btn { display: inline-block; background: #fff; color: #000; padding: 12px 30px; text-decoration: none; font-weight: 700; letter-spacing: 1.5px; font-size: 10pt; text-transform: uppercase; border-radius: 2px; }
+    .cta-block a.btn-secondary { background: transparent; color: #fff; border: 1px solid #fff; margin-left: 10px; }
+
+    .page-break { page-break-before: always; }
+
+    footer { margin-top: 50px; padding-top: 25px; border-top: 2px solid #000; }
+    .footer-brands { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+    .footer-brand { font-size: 14pt; font-weight: 700; color: #000; }
+    .footer-brand-url { font-size: 9pt; color: #666; margin-left: 10px; }
+    .footer-info { display: flex; justify-content: space-between; font-size: 8pt; color: #999; }
+    .footer-info a { color: #666; text-decoration: none; }
+  </style>
+</head>
+<body data-title="Authority Boost 90">
+
+  <!-- ====== PÁGINA 1 · COVER ====== -->
+  <div class="cover">
+    <div>
+      <div class="cover-eyebrow">Servicio Zoopa / 498A · plan integral autoridad digital</div>
+      <h1>Authority<br>Boost 90.</h1>
+      <div class="cover-subtitle">90 días para llevar a un profesional de presencia parcial a autoridad consolidada en las 7 capas que un LLM, un buscador y un decisor humano consultan al evaluar credibilidad.</div>
+    </div>
+    <div class="cover-headline-metric">
+      <div class="cover-metric-grid">
+        <div>
+          <div class="cover-metric-value">7 capas</div>
+          <div class="cover-metric-label">Owned · Earned · Reviews · Discoverability · GEO · Comunidad · Identidad</div>
+        </div>
+        <div>
+          <div class="cover-metric-value">DKI 0-1000</div>
+          <div class="cover-metric-label">Digital Karma Index propietario · medible</div>
+        </div>
+        <div>
+          <div class="cover-metric-value">€2-30K</div>
+          <div class="cover-metric-label">5 tiers · 72-87% margen interno</div>
+        </div>
+      </div>
+    </div>
+    <div class="cover-footer">
+      <div class="cover-author">
+        <strong>Resumen interno · 2 páginas</strong>
+        <span>Owner Carlos Ortet · operaciones Mer Canet</span>
+      </div>
+      <div class="cover-date">
+        <div>24 mayo 2026</div>
+        <div class="cover-brand">ZOOPA · 498AS</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== PÁGINA 2 · RESUMEN ====== -->
+  <div class="exec-summary">
+    <h2>En una frase</h2>
+    <p>Authority Boost 90 es el primer servicio del mercado que orquesta <strong>las 7 capas reales</strong> de autoridad digital de un profesional (no solo LinkedIn), las mide con una métrica unificada (DKI), y ejecuta plan personalizado por sector en 90 días.</p>
+  </div>
+
+  <!-- Las 7 capas resumidas -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">Sección 1</div>
+      <div class="section-title">Las 7 capas de autoridad digital</div>
+    </div>
+    <div class="layer-stack">
+      <div class="layer l1">
+        <div class="layer-num">1</div>
+        <div class="layer-content"><h4>Owned media</h4><p>Sitio web personal, newsletter Substack, blog canonical, podcast host</p></div>
+      </div>
+      <div class="layer l2">
+        <div class="layer-num">2</div>
+        <div class="layer-content"><h4>Earned media</h4><p>LinkedIn · HN · Reddit · Quora · Bluesky · X · Mastodon · Threads · YouTube</p></div>
+      </div>
+      <div class="layer l3">
+        <div class="layer-num">3</div>
+        <div class="layer-content"><h4>Citation &amp; Reviews</h4><p>Google Local Guide · Trustpilot · G2 · Glassdoor · LinkedIn Recommendations · Goodreads</p></div>
+      </div>
+      <div class="layer l4">
+        <div class="layer-num">4</div>
+        <div class="layer-content"><h4>Discoverability</h4><p>Wikipedia · Wikidata · Schema.org Person · Google Knowledge Panel · llms.txt · ORCID · Crunchbase</p></div>
+      </div>
+      <div class="layer l5">
+        <div class="layer-num">5</div>
+        <div class="layer-content"><h4>Generative engine (LLM Visibility)</h4><p>GEORadar mide SoV · Position · Sentiment · Co-branding en ChatGPT · Claude · Gemini · Perplexity · Copilot</p></div>
+      </div>
+      <div class="layer l6">
+        <div class="layer-num">6</div>
+        <div class="layer-content"><h4>Comunidad</h4><p>Speaking circuit · podcast guesting · webinars · guest lectures · HARO/Qwoted</p></div>
+      </div>
+      <div class="layer l7">
+        <div class="layer-num">7</div>
+        <div class="layer-content"><h4>Verificación identidad</h4><p>Verified badges · domain email · LinkedIn LION · Mastodon rel=me · custom DID Bluesky · identity consistency</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DKI + Pricing en 1 sección compacta -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">Sección 2</div>
+      <div class="section-title">Digital Karma Index (DKI) + Pricing</div>
+    </div>
+
+    <p style="font-size: 10pt; margin-bottom: 12px;">DKI es nuestra métrica propietaria que mide autoridad digital cross-platform de un profesional. Score composite 0-1000 sobre las 5 capas que importan (Earned 40% + Discoverability 20% + LLM Visibility 15% + Trust Signals 15% + Owned 10%). Tiers: Invisible · Emerging · Established · Recognized · Leading · Top of field.</p>
+
+    <h3 style="font-size: 11pt; margin: 16px 0 8px;">Pricing V2 · 5 tiers</h3>
+    <table>
+      <tr><th>Tier</th><th>Para quién</th><th>Precio</th><th>Margen</th></tr>
+      <tr><td class="td-tier3"><strong>Quick Audit</strong></td><td>Lead gen / sample</td><td>€1.2-1.8K (2 sem)</td><td>76%</td></tr>
+      <tr><td class="td-tier3"><strong>Starter ⭐</strong></td><td>Solopreneurs</td><td>€1.8-2.8K (1 mes)</td><td>72%</td></tr>
+      <tr><td class="td-tier1"><strong>Personal</strong></td><td>C-level, founders, académicos</td><td>€5-8K (3 m)</td><td>75%</td></tr>
+      <tr><td class="td-tier1"><strong>Empresa</strong></td><td>B2B SaaS, servicios pro</td><td>€10-18K (3 m)</td><td>79%</td></tr>
+      <tr><td class="td-tier2"><strong>Sostenido</strong></td><td>Post-90</td><td>€1.5-3K/mes</td><td>87%</td></tr>
+    </table>
+
+    <h3 style="font-size: 11pt; margin: 16px 0 8px;">Estructura 90 días</h3>
+    <div class="phases-grid">
+      <div class="phase-card">
+        <div class="phase-days">Días 1-30</div>
+        <h4>Foundation</h4>
+        <p>Audit 7 capas + DKI baseline + fix identity cross-platform + Schema.org Person + llms.txt + claim perfiles missing + cadencia inicial</p>
+      </div>
+      <div class="phase-card">
+        <div class="phase-days">Días 31-60</div>
+        <h4>Build</h4>
+        <p>Cadencia diaria multi-plataforma + outreach 10 podcasts + 5 medios sectoriales + mid GEORadar + segundo batch reviews</p>
+      </div>
+      <div class="phase-card">
+        <div class="phase-days">Días 61-90</div>
+        <h4>Scale</h4>
+        <p>Speaking circuit (TEDx submission) + webinar propio + pieza pillar long-form + Wikipedia submission + outreach tier-1</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <h3>Ver case studies y diferencial competitivo</h3>
+    <p>Casos reales con DKI baseline + plan personalizado en ejecución</p>
+    <a href="case-studies.html" class="btn">Case Studies</a>
+    <a href="https://github.com/ZOOPA-Smart-Agency/karma-booster" class="btn btn-secondary">Skill karma-booster (repo)</a>
+  </div>
+
+  <!-- Diferencial competitivo + stack -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">Sección 3</div>
+      <div class="section-title">Diferencial defensible</div>
+    </div>
+    <div class="insight-box">
+      Combinamos lo que ningún competidor tiene en una sola oferta. GEORadar mide LLM visibility. DOC optimiza AX del sitio. S.A.M. valida contenido. LEO produce 30+ canales. Zoopa equipo audiovisual. 498A consultoría. <strong>Nadie orquesta las 7 capas con stack propio</strong>.
+    </div>
+    <table>
+      <tr><th>Componente</th><th>Función en AB90</th></tr>
+      <tr><td><strong>GEORadar</strong></td><td>Mide capa 5 (LLM Visibility) baseline + mid + final</td></tr>
+      <tr><td><strong>DOC</strong></td><td>Optimiza Agent Experience del sitio personal del cliente</td></tr>
+      <tr><td><strong>S.A.M.</strong></td><td>Valida contenido producido contra prompts target del nicho</td></tr>
+      <tr><td><strong>LEO (content-factory)</strong></td><td>Genera contenido cadenced 30+ canales con voces validadas</td></tr>
+      <tr><td><strong>karma-booster</strong></td><td>Skill de evaluación inicial (DKI + plan personalizado)</td></tr>
+      <tr><td><strong>Zoopa Voices</strong></td><td>Red de profesionales con backlinks DA60+ cruzados (add-on)</td></tr>
+    </table>
+  </div>
+
+  <!-- Próximos pasos / contacto -->
+  <div class="cta-block">
+    <h3>Hablemos sobre tu perfil</h3>
+    <p>Quick Audit en 2 semanas · €1.2-1.8K · sin compromiso</p>
+    <a href="mailto:carlos.ortet@zoopa.es?subject=Authority%20Boost%2090%20%C2%B7%20Quick%20Audit" class="btn">Contactar</a>
+    <a href="https://carlosortet.com" class="btn btn-secondary">carlosortet.com</a>
+  </div>
+
+  <footer>
+    <div class="footer-brands">
+      <div><span class="footer-brand">ZOOPA</span> <span class="footer-brand-url">zoopa.es</span></div>
+      <div><span class="footer-brand">498AS</span> <span class="footer-brand-url">498as.com</span></div>
+    </div>
+    <div class="footer-info">
+      <div><strong>Authority Boost 90</strong> · servicio V1<br>Owner Carlos Ortet · <a href="mailto:carlos.ortet@zoopa.es">carlos.ortet@zoopa.es</a></div>
+      <div style="text-align: right;"><strong>Repo karma-booster (skill)</strong><br><a href="https://github.com/ZOOPA-Smart-Agency/karma-booster">github.com/ZOOPA-Smart-Agency/karma-booster</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>

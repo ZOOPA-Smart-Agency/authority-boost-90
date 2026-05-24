@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies · Authority Boost 90</title>
+  <meta name="description" content="Casos reales Authority Boost 90: DKI baseline + plan personalizado + métricas en ejecución.">
+  <style>
+    @page {
+      size: A4;
+      margin: 2cm 1.5cm;
+      @top-left { content: "Case Studies · Authority Boost 90"; font-family: 'Georgia', serif; font-size: 8pt; color: #888; }
+      @top-right { content: string(doc-section); font-family: 'Georgia', serif; font-size: 8pt; color: #888; }
+      @bottom-center { content: "Página " counter(page); font-family: 'Georgia', serif; font-size: 8pt; color: #999; }
+    }
+    @page :first { @top-left {content: "";} @top-right {content: "";} @bottom-center {content: "";} }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Georgia', serif; font-size: 11pt; line-height: 1.5; color: #1a1a1a; background: #fff; max-width: 210mm; margin: 0 auto; padding: 40px; }
+    a { color: #1a1a1a; text-decoration: underline; }
+    a:hover { color: #b30000; }
+
+    .cover { page-break-after: always; min-height: 80vh; display: flex; flex-direction: column; justify-content: space-between; padding: 60px 20px 40px; }
+    .cover-eyebrow { font-size: 10pt; text-transform: uppercase; letter-spacing: 2px; color: #666; margin-bottom: 30px; }
+    .cover h1 { font-size: 52pt; font-weight: 400; letter-spacing: -2px; line-height: 0.95; margin-bottom: 20px; }
+    .cover-subtitle { font-size: 15pt; font-style: italic; color: #555; max-width: 85%; margin-bottom: 50px; }
+    .back-link { display: inline-block; margin-bottom: 30px; font-size: 10pt; color: #666; }
+
+    .case-card { background: #fafafa; padding: 30px; margin-bottom: 30px; border-radius: 2px; page-break-inside: avoid; }
+    .case-status { display: inline-block; font-size: 8pt; text-transform: uppercase; letter-spacing: 1.5px; padding: 3px 10px; border-radius: 2px; margin-bottom: 10px; font-weight: 700; }
+    .case-status.live { background: #ddf4dd; color: #1f6b1f; }
+    .case-status.upcoming { background: #fef9ed; color: #8a5800; }
+    .case-status.placeholder { background: #eaeaea; color: #555; }
+    .case-card h2 { font-size: 22pt; font-weight: 400; letter-spacing: -0.5px; margin-bottom: 6px; string-set: doc-section content(); }
+    .case-card .case-meta { font-size: 10pt; color: #666; margin-bottom: 18px; font-style: italic; }
+
+    .dki-display { background: #0a0a0a; color: #fff; padding: 20px 25px; margin: 16px 0; border-radius: 2px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .dki-value { font-size: 36pt; font-weight: 700; letter-spacing: -1px; line-height: 1; }
+    .dki-label { font-size: 9pt; text-transform: uppercase; letter-spacing: 1.5px; margin-top: 8px; opacity: 0.7; }
+    .dki-tier { font-size: 12pt; font-style: italic; margin-top: 6px; opacity: 0.85; }
+
+    .layer-bar { display: grid; grid-template-columns: 180px 1fr 90px; align-items: center; gap: 12px; margin-bottom: 6px; font-size: 9.5pt; }
+    .layer-bar-label { text-align: right; color: #444; font-weight: 500; }
+    .layer-bar-track { background: #eaeaea; height: 14px; border-radius: 2px; overflow: hidden; }
+    .layer-bar-fill { height: 100%; background: #1a1a1a; }
+    .layer-bar-fill.low { background: #b30000; }
+    .layer-bar-fill.med { background: #d97706; }
+    .layer-bar-fill.high { background: #047857; }
+    .layer-bar-value { font-family: 'Consolas', monospace; font-weight: 700; font-size: 9pt; color: #333; }
+
+    table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 9.5pt; }
+    th { background: #1a1a1a; color: #fff; text-align: left; padding: 8px 12px; font-weight: 500; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.5px; }
+    td { padding: 9px 12px; border-bottom: 1px solid #eaeaea; vertical-align: top; }
+    tr:nth-child(even) { background: #fff; }
+    .case-card table tr:nth-child(even) { background: #f3f3f3; }
+
+    h3 { font-size: 12pt; margin: 16px 0 8px; }
+    .compact-list { margin: 10px 0; padding-left: 18px; font-size: 10pt; }
+    .compact-list li { margin-bottom: 4px; }
+
+    .cta-mini { margin-top: 20px; padding-top: 16px; border-top: 1px solid #ddd; font-size: 9.5pt; color: #666; }
+
+    footer { margin-top: 50px; padding-top: 25px; border-top: 2px solid #000; }
+    .footer-brand { font-size: 14pt; font-weight: 700; color: #000; }
+    .footer-brand-url { font-size: 9pt; color: #666; margin-left: 10px; }
+    .footer-info { font-size: 8pt; color: #999; margin-top: 8px; }
+    .footer-info a { color: #666; text-decoration: none; }
+  </style>
+</head>
+<body data-title="Case Studies AB90">
+
+  <!-- Cover -->
+  <div class="cover">
+    <div>
+      <a href="index.html" class="back-link">← Authority Boost 90</a>
+      <div class="cover-eyebrow">Casos reales en ejecución · DKI medido</div>
+      <h1>Case<br>Studies.</h1>
+      <div class="cover-subtitle">Perfiles reales evaluados con la metodología karma-booster. DKI baseline calculado, gaps identificados, plan personalizado en ejecución.</div>
+    </div>
+  </div>
+
+  <!-- Case 1 · Carlos Ortet -->
+  <div class="case-card">
+    <span class="case-status live">V1 · en ejecución</span>
+    <h2>Carlos Ortet</h2>
+    <div class="case-meta">CEO Zoopa · Director 498A · Senior Innovation Engineer · Tech / GEO consulting EU · 24 may 2026</div>
+
+    <h3>Trigger del caso</h3>
+    <p style="font-size: 10pt;">Carlos publicó el artículo "El tejido invisible de la IA" en zoopa.es. Submitido a Hacker News con OP comment redactado con asistencia LLM. Comment auto-flagged por clasificador genAI de HN. dang (HN admin) confirmó por email. El trigger expuso presencia parcial multi-plataforma sin estrategia integrada de autoridad digital.</p>
+
+    <div class="dki-display">
+      <div>
+        <div class="dki-value">356</div>
+        <div class="dki-label">DKI baseline · 24 may 2026</div>
+        <div class="dki-tier">Established en niche</div>
+      </div>
+      <div>
+        <div class="dki-value">560</div>
+        <div class="dki-label">DKI target día 90 · 22 ago 2026</div>
+        <div class="dki-tier">Recognized regional/sectorial</div>
+      </div>
+    </div>
+
+    <h3>Breakdown por capa</h3>
+    <div class="layer-bar">
+      <div class="layer-bar-label">Earned Authority</div>
+      <div class="layer-bar-track"><div class="layer-bar-fill" style="width: 59%"></div></div>
+      <div class="layer-bar-value">235 / 400</div>
+    </div>
+    <div class="layer-bar">
+      <div class="layer-bar-label">Discoverability</div>
+      <div class="layer-bar-track"><div class="layer-bar-fill low" style="width: 13%"></div></div>
+      <div class="layer-bar-value">26 / 200</div>
+    </div>
+    <div class="layer-bar">
+      <div class="layer-bar-label">LLM Visibility</div>
+      <div class="layer-bar-track"><div class="layer-bar-fill low" style="width: 0%"></div></div>
+      <div class="layer-bar-value">0 / 150</div>
+    </div>
+    <div class="layer-bar">
+      <div class="layer-bar-label">Trust Signals</div>
+      <div class="layer-bar-track"><div class="layer-bar-fill med" style="width: 33%"></div></div>
+      <div class="layer-bar-value">50 / 150</div>
+    </div>
+    <div class="layer-bar">
+      <div class="layer-bar-label">Owned Anchor</div>
+      <div class="layer-bar-track"><div class="layer-bar-fill high" style="width: 45%"></div></div>
+      <div class="layer-bar-value">45 / 100</div>
+    </div>
+
+    <h3>Gaps priorizados · plan de ataque</h3>
+    <table>
+      <tr><th>Prioridad</th><th>Capa</th><th>Acción Foundation (días 1-30)</th></tr>
+      <tr><td>1</td><td>LLM Visibility (0%)</td><td>GEORadar baseline ya. Schema.org Person confirmar. llms.txt + robots.txt</td></tr>
+      <tr><td>2</td><td>Discoverability (13%)</td><td>Wikidata Q-number + Wikipedia draft + Google KP trigger</td></tr>
+      <tr><td>3</td><td>Trust Signals (33%)</td><td>5 LinkedIn Recommendations + 1 op-ed FT/El País + LinkedIn verified</td></tr>
+      <tr><td>4</td><td>Earned (59%)</td><td>HN bloqueado por genAI flag → Bluesky/Mastodon/Quora suben rápido. LinkedIn Newsletter + carousels</td></tr>
+    </table>
+
+    <h3>Targets día 90</h3>
+    <table>
+      <tr><th>Métrica</th><th>Día 1</th><th>Día 90 target</th></tr>
+      <tr><td>HN karma</td><td>1</td><td>50+ (100% manual writing post-dang)</td></tr>
+      <tr><td>Bluesky followers</td><td>0</td><td>120+</td></tr>
+      <tr><td>Mastodon followers</td><td>0</td><td>30-50</td></tr>
+      <tr><td>Quora answers en topic</td><td>1</td><td>4 (cadencia 48h auto-programada)</td></tr>
+      <tr><td>LinkedIn followers</td><td>5.200</td><td>6.500+</td></tr>
+      <tr><td>LinkedIn SSI Score</td><td>no medido</td><td>60+</td></tr>
+      <tr><td>LinkedIn Newsletter subs</td><td>0</td><td>200+</td></tr>
+      <tr><td>LinkedIn Carousels publicados</td><td>0</td><td>3-4</td></tr>
+      <tr><td>Recommendations LinkedIn nuevas</td><td>0</td><td>5</td></tr>
+    </table>
+
+    <div class="cta-mini">
+      <strong>Tier servicio</strong>: Personal (€5-8K · 3 meses) · en ejecución como V1 founder pricing (€4.5K con testimonial público) ·
+      <a href="https://github.com/ZOOPA-Smart-Agency/karma-booster/blob/main/examples/carlos-ortet-case-study.md">Spec completo del case</a>
+    </div>
+  </div>
+
+  <!-- Case 2 · Placeholder próximo cliente Personal -->
+  <div class="case-card">
+    <span class="case-status upcoming">V1.5 · Q3 2026 · primer cliente externo</span>
+    <h2>[Primer cliente Personal externo]</h2>
+    <div class="case-meta">CEO B2B SaaS EU · perfil pendiente · pre-pitch</div>
+
+    <p style="font-size: 10pt;">Buscando founder B2B SaaS europeo con DKI estimado tier "Emerging" (100-300) y audiencia objetivo founders/inversores. Founder pricing €4.5K con compromiso de case study público + testimonial.</p>
+
+    <h3>Perfil ideal target</h3>
+    <ul class="compact-list">
+      <li>Founder / CEO en sector SaaS B2B (FinTech, MarTech, DevTools, etc.)</li>
+      <li>Empresa Seed/Series A con 5-30 empleados</li>
+      <li>Audiencia objetivo: founders, inversores, decision-makers tech EU</li>
+      <li>Presencia parcial multi-plataforma actual (LinkedIn fuerte, resto debil)</li>
+      <li>Dispuesto a invertir 5h/semana del CEO durante 90 días</li>
+    </ul>
+
+    <div class="cta-mini">
+      <strong>Si conoces a alguien que encaja</strong>, intro a <a href="mailto:carlos.ortet@zoopa.es?subject=AB90%20V1.5%20%C2%B7%20Founder%20Personal%20tier">carlos.ortet@zoopa.es</a>
+    </div>
+  </div>
+
+  <!-- Case 3 · Placeholder Empresa -->
+  <div class="case-card">
+    <span class="case-status upcoming">V2 · Q4 2026 · primer cliente Empresa</span>
+    <h2>[Primer cliente Empresa]</h2>
+    <div class="case-meta">B2B SaaS Series B+ · perfil pendiente · pre-pitch</div>
+
+    <p style="font-size: 10pt;">Empresa B2B SaaS con producto activo, equipo 30-100, ARR €1-10M. Tier Empresa €9K founder pricing (€14K standard). Incluye claim Trustpilot/G2 + employee advocacy + Schema enterprise + corporate LinkedIn page integration.</p>
+
+    <h3>Diferencia vs Personal tier</h3>
+    <ul class="compact-list">
+      <li><strong>Capa 3 reviews</strong>: claim + setup G2/Capterra + outreach 30 clientes para reviews</li>
+      <li><strong>Capa 7 identidad</strong>: domain DMARC enterprise + verified badges para CEO + Schema.org Organization</li>
+      <li><strong>Add-on Employee Advocacy</strong>: setup Slack interno + templates de amplificación + 6 employees activos</li>
+      <li><strong>Add-on LinkedIn Deep Optimization</strong> (€2-3K extra): profile audit CEO + Newsletter setup + Company Page</li>
+    </ul>
+  </div>
+
+  <!-- Case 4 · Placeholder otro sector -->
+  <div class="case-card">
+    <span class="case-status placeholder">Validación sectorial · pendiente</span>
+    <h2>[Perfil de validación sectorial · actor / abogado / chef / académico]</h2>
+    <div class="case-meta">Pro bono · validar pesos de plataformas para sectores no-tech</div>
+
+    <p style="font-size: 10pt;">Para validar que karma-booster funciona fuera del sector tech, buscamos 3-5 perfiles pro bono de sectores muy distintos: actor (IMDb · Backstage · TikTok), abogado (JD Supra · Avvo · LinkedIn), chef (Instagram · Michelin · Eater), académico (Google Scholar · ORCID · Wikipedia). Sin coste · compromiso de aportar feedback metodológico para refinar pesos sectoriales.</p>
+
+    <div class="cta-mini">
+      <strong>Si quieres ser perfil de validación pro bono</strong> en alguno de estos 4 sectores: <a href="mailto:carlos.ortet@zoopa.es?subject=AB90%20%C2%B7%20Validaci%C3%B3n%20sectorial%20pro%20bono">carlos.ortet@zoopa.es</a>
+    </div>
+  </div>
+
+  <!-- Roadmap -->
+  <div class="case-card">
+    <h2>Roadmap clientes</h2>
+    <table>
+      <tr><th>Versión</th><th>Cuándo</th><th>Clientes esperados</th></tr>
+      <tr><td><strong>V1.0</strong></td><td>may 2026</td><td>Case study único interno (Carlos Ortet)</td></tr>
+      <tr><td><strong>V1.5</strong></td><td>Q3 2026</td><td>1-3 founders Personal tier · founder pricing</td></tr>
+      <tr><td><strong>V2.0</strong></td><td>Q4 2026</td><td>+1 Empresa tier · cases de validación sectorial pro bono</td></tr>
+      <tr><td><strong>V2.5</strong></td><td>H1 2027</td><td>3-5 clientes activos · pricing público</td></tr>
+      <tr><td><strong>V3.0</strong></td><td>H2 2027</td><td>Self-serve audit + landing zoopa.es/servicios/authority-boost</td></tr>
+    </table>
+  </div>
+
+  <footer>
+    <div>
+      <span class="footer-brand">ZOOPA</span> <span class="footer-brand-url">zoopa.es</span>
+      <span style="float: right;"><span class="footer-brand">498AS</span> <span class="footer-brand-url">498as.com</span></span>
+    </div>
+    <div class="footer-info" style="display: flex; justify-content: space-between;">
+      <div><strong>Case Studies AB90</strong> · <a href="index.html">← Volver al resumen</a></div>
+      <div style="text-align: right;"><a href="https://github.com/ZOOPA-Smart-Agency/karma-booster">karma-booster repo</a> · <a href="mailto:carlos.ortet@zoopa.es">carlos.ortet@zoopa.es</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>
