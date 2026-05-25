@@ -492,6 +492,82 @@
     }
     .insight strong { font-style: normal; color: var(--accent); font-weight: 600; }
 
+    /* ============ MEDIA UNIVERSE GRID ============ */
+    .media-universe {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 22px 0 18px;
+    }
+    .media-block {
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 14px 16px 12px;
+      background: var(--paper);
+      page-break-inside: avoid;
+    }
+    .media-block.full { grid-column: span 2; }
+    .media-block-head {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .media-block-num {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 14pt;
+      color: var(--accent);
+      font-weight: 500;
+      line-height: 1;
+      min-width: 22px;
+    }
+    .media-block-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.1px;
+      flex: 1;
+    }
+    .media-block-count {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+    .media-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 7px;
+    }
+    .media-chip {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      color: var(--ink);
+      background: var(--paper-white);
+      padding: 4px 9px;
+      border-radius: 11px;
+      border: 1px solid var(--rule);
+      white-space: nowrap;
+      line-height: 1.3;
+    }
+    .media-chip.core {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .media-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      color: var(--muted);
+      margin-top: 6px;
+      font-style: italic;
+    }
+
     .table {
       width: 100%;
       border-collapse: collapse;
@@ -764,8 +840,8 @@
       </div>
 
       <div class="cover-footer">
-        <span>Resumen interno · 2 páginas</span>
-        <span><span class="date">25 mayo 2026</span> · v1.1</span>
+        <span>Resumen interno · 5 páginas + case studies</span>
+        <span><span class="date">25 mayo 2026</span> · v1.5</span>
       </div>
     </div>
   </div>
@@ -822,11 +898,196 @@
     </div>
   </div>
 
+  <!-- ============ PAGE 2B · UNIVERSO DE MEDIOS ============ -->
+  <div class="page">
+    <div class="page-header">
+      <span class="page-number">§ 02 · marketplace de canales</span>
+      <span class="page-number">03</span>
+    </div>
+    <h2 class="page-title">El universo de medios<br>que <span class="accent">activamos</span>.</h2>
+    <p class="lead">Cubrimos <strong>45+ plataformas</strong> agrupadas en 10 bloques. Cada caso prioriza un subconjunto distinto: un actor activará IMDb · Spotify · Instagram · TikTok; un abogado activará JD Supra · Avvo · LinkedIn · Quora; un CEO B2B activará LinkedIn · Substack · HN · Crunchbase. El método es el mismo, el mix depende del perfil.</p>
+
+    <div class="media-universe">
+
+      <div class="media-block">
+        <div class="media-block-head">
+          <span class="media-block-num">01</span>
+          <span class="media-block-title">Owned anchor (tu casa)</span>
+          <span class="media-block-count">4</span>
+        </div>
+        <div class="media-chips">
+          <span class="media-chip core">Web personal</span>
+          <span class="media-chip">Newsletter</span>
+          <span class="media-chip">Blog canonical</span>
+          <span class="media-chip">Podcast host</span>
+        </div>
+      </div>
+
+      <div class="media-block">
+        <div class="media-block-head">
+          <span class="media-block-num">02</span>
+          <span class="media-block-title">Generales de distribución</span>
+          <span class="media-block-count">10</span>
+        </div>
+        <div class="media-chips">
+          <span class="media-chip core">LinkedIn</span>
+          <span class="media-chip">X / Twitter</span>
+          <span class="media-chip">Bluesky</span>
+          <span class="media-chip">Threads</span>
+          <span class="media-chip">Mastodon</span>
+          <span class="media-chip">Facebook</span>
+          <span class="media-chip">Instagram</span>
+          <span class="media-chip">TikTok</span>
+          <span class="media-chip">YouTube</span>
+          <span class="media-chip">Quora</span>
+        </div>
+      </div>
+
+      <div class="media-block">
+        <div class="media-block-head">
+          <span class="media-block-num">03</span>
+          <span class="media-block-title">Comunidad / Q&amp;A</span>
+          <span class="media-block-count">4</span>
+        </div>
+        <div class="media-chips">
+          <span class="media-chip core">Hacker News</span>
+          <span class="media-chip core">Reddit</span>
+          <span class="media-chip">Stack Overflow</span>
+          <span class="media-chip">Discord</span>
+        </div>
+      </div>
+
+      <div class="media-block">
+        <div class="media-block-head">
+          <span class="media-block-num">04</span>
+          <span class="media-block-title">Editorial / Newsletter</span>
+          <span class="media-block-count">4</span>
+        </div>
+        <div class="media-chips">
+          <span class="media-chip core">Substack</span>
+          <span class="media-chip">Medium</span>
+          <span class="media-chip">LinkedIn Newsletter</span>
+          <span class="media-chip">Beehiiv</span>
+        </div>
+      </div>
+
+      <div class="media-block">
+        <div class="media-block-head">
+          <span class="media-block-num">05</span>
+          <span class="media-block-title">Discoverability / Knowledge graphs</span>
+          <span class="media-block-count">4</span>
+        </div>
+        <div class="media-chips">
+          <span class="media-chip core">Wikipedia</span>
+          <span class="media-chip core">Wikidata</span>
+          <span class="media-chip">Google Knowledge Panel</span>
+          <span class="media-chip">Schema.org Person</span>
+        </div>
+      </div>
+
+      <div class="media-block">
+        <div class="media-block-head">
+          <span class="media-block-num">06</span>
+          <span class="media-block-title">Reviews / Trust signals</span>
+          <span class="media-block-count">6</span>
+        </div>
+        <div class="media-chips">
+          <span class="media-chip core">Google Reviews / Local Guide</span>
+          <span class="media-chip">Trustpilot</span>
+          <span class="media-chip">G2</span>
+          <span class="media-chip">Glassdoor</span>
+          <span class="media-chip">Goodreads</span>
+          <span class="media-chip">Amazon Author</span>
+        </div>
+      </div>
+
+      <div class="media-block">
+        <div class="media-block-head">
+          <span class="media-block-num">07</span>
+          <span class="media-block-title">Tech-specific (devs, founders, makers)</span>
+          <span class="media-block-count">6</span>
+        </div>
+        <div class="media-chips">
+          <span class="media-chip">GitHub</span>
+          <span class="media-chip">Dev.to</span>
+          <span class="media-chip">Hashnode</span>
+          <span class="media-chip">Lobste.rs</span>
+          <span class="media-chip">HackerNoon</span>
+          <span class="media-chip">DZone</span>
+        </div>
+      </div>
+
+      <div class="media-block">
+        <div class="media-block-head">
+          <span class="media-block-num">08</span>
+          <span class="media-block-title">Academic / Research</span>
+          <span class="media-block-count">5</span>
+        </div>
+        <div class="media-chips">
+          <span class="media-chip">Google Scholar</span>
+          <span class="media-chip">ORCID</span>
+          <span class="media-chip">ResearchGate</span>
+          <span class="media-chip">Semantic Scholar</span>
+          <span class="media-chip">arXiv</span>
+        </div>
+      </div>
+
+      <div class="media-block full">
+        <div class="media-block-head">
+          <span class="media-block-num">09</span>
+          <span class="media-block-title">Sector-specialized (perfil define cuáles aplican)</span>
+          <span class="media-block-count">14+</span>
+        </div>
+        <div class="media-chips">
+          <span class="media-chip">IMDb</span>
+          <span class="media-chip">Spotify for Artists</span>
+          <span class="media-chip">Doximity</span>
+          <span class="media-chip">Sermo</span>
+          <span class="media-chip">JD Supra</span>
+          <span class="media-chip">Avvo</span>
+          <span class="media-chip">Dribbble</span>
+          <span class="media-chip">Behance</span>
+          <span class="media-chip">ArchDaily</span>
+          <span class="media-chip">Dezeen</span>
+          <span class="media-chip">Crunchbase</span>
+          <span class="media-chip">AngelList</span>
+          <span class="media-chip">Indie Hackers</span>
+          <span class="media-chip">Product Hunt</span>
+        </div>
+        <p class="media-note">Actor: IMDb · Spotify · Instagram · TikTok &nbsp;·&nbsp; Médico: Doximity · Sermo · Google Reviews &nbsp;·&nbsp; Abogado: JD Supra · Avvo · LinkedIn &nbsp;·&nbsp; Diseñador: Dribbble · Behance · Are.na &nbsp;·&nbsp; Arquitecto: ArchDaily · Dezeen · Instagram &nbsp;·&nbsp; Founder: Crunchbase · AngelList · Product Hunt</p>
+      </div>
+
+      <div class="media-block full">
+        <div class="media-block-head">
+          <span class="media-block-num">10</span>
+          <span class="media-block-title">Comunidad activa · Events · LLM surfaces (capa Zoopa)</span>
+          <span class="media-block-count">8</span>
+        </div>
+        <div class="media-chips">
+          <span class="media-chip">TED / TEDx</span>
+          <span class="media-chip">Conference circuit</span>
+          <span class="media-chip">Podcast guesting</span>
+          <span class="media-chip">HARO / Qwoted</span>
+          <span class="media-chip core">ChatGPT</span>
+          <span class="media-chip core">Claude</span>
+          <span class="media-chip core">Perplexity</span>
+          <span class="media-chip core">Google AI Overviews</span>
+        </div>
+        <p class="media-note">Las 4 superficies LLM (capa 5 del framework) se miden con <strong>GEORadar</strong>: SoV · Position · Sentiment · Co-branding. Ningún competidor de personal branding las cubre.</p>
+      </div>
+
+    </div>
+
+    <div class="insight">
+      <strong>La lista es el universo · la priorización es el caso.</strong> En el kickoff calculamos tu DKI baseline (skill <em>karma-booster</em>) y elegimos contigo las <strong>5-8 plataformas core</strong> donde concentrar foundation, build y scale. El resto queda en mantenimiento de identidad. No prometemos cubrir 45 canales en 90 días: prometemos elegir bien y ejecutar a fondo.
+    </div>
+  </div>
+
   <!-- ============ PAGE 3 · DKI + PRICING ============ -->
   <div class="page">
     <div class="page-header">
-      <span class="page-number">§ 02 · métrica + modelo comercial</span>
-      <span class="page-number">03</span>
+      <span class="page-number">§ 03 · métrica + modelo comercial</span>
+      <span class="page-number">04</span>
     </div>
     <h2 class="page-title">Digital Karma Index<br>+ <span class="accent">5 tiers</span> de servicio.</h2>
     <p class="lead">DKI es nuestra métrica propietaria: score composite <strong>0–1000</strong> sobre las 5 capas que importan. <em>Earned</em> 40% + <em>Discoverability</em> 20% + <em>LLM Visibility</em> 15% + <em>Trust Signals</em> 15% + <em>Owned</em> 10%. Tiers: Invisible · Emerging · Established · Recognized · Leading · Top of field.</p>
@@ -896,8 +1157,8 @@
   <!-- ============ PAGE 4 · EJEMPLOS DOS PERFILES ============ -->
   <div class="page">
     <div class="page-header">
-      <span class="page-number">§ 03 · qué cambia · ejemplos reales</span>
-      <span class="page-number">04</span>
+      <span class="page-number">§ 04 · qué cambia · ejemplos reales</span>
+      <span class="page-number">05</span>
     </div>
     <h2 class="page-title">Dos perfiles, dos puntos de partida,<br><span class="accent">un mismo método</span>.</h2>
     <p class="lead">El DKI cambia el tipo de oportunidades que llegan, no solo los seguidores. Aquí dos miembros del equipo en puntos opuestos del recorrido: <strong>Carlos</strong> (Established) busca recognized regional; <strong>Guille</strong> (Emerging) busca established en su disciplina.</p>
@@ -984,8 +1245,8 @@
   <!-- ============ FINAL CTA ============ -->
   <div class="page">
     <div class="page-header">
-      <span class="page-number">§ 04 · próximos pasos</span>
-      <span class="page-number">05</span>
+      <span class="page-number">§ 05 · próximos pasos</span>
+      <span class="page-number">06</span>
     </div>
     <h2 class="page-title">Stack propio que <span class="accent">nadie más combina</span>.</h2>
     <p class="lead">Combinamos lo que ningún competidor tiene en una sola oferta. GEORadar mide LLM visibility. DOC optimiza AX del sitio. S.A.M. valida contenido. LEO produce 30+ canales. Zoopa equipo audiovisual. 498A consultoría.</p>
@@ -1021,7 +1282,7 @@
       </div>
     </div>
     <div class="footer-meta">
-      <div>Authority Boost 90 · v1.1 · <a href="mailto:carlos.ortet@zoopa.es">carlos.ortet@zoopa.es</a></div>
+      <div>Authority Boost 90 · v1.5 · <a href="mailto:carlos.ortet@zoopa.es">carlos.ortet@zoopa.es</a></div>
       <div><a href="https://github.com/ZOOPA-Smart-Agency/karma-booster">karma-booster ↗</a> · <a href="case-studies.html">Case studies</a></div>
     </div>
   </footer>
